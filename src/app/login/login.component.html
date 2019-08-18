@@ -1,0 +1,48 @@
+<div class="w3l_banner_nav_right">
+    <!-- login -->
+        <div class="w3_login">
+          <h3>Sign In & Sign Up</h3>
+          <div class="w3_login_module">
+            <div class="module form-module">
+              <div class="toggle"><i class="fa fa-times fa-pencil"></i>
+              <div class="tooltip">Click Me</div>
+              </div>
+              <div class="form">
+              <h2>Login to your account</h2>
+              <h4>{{msg}}</h4>
+              <form (submit)="doLogin(login)" #login="ngForm">
+                <input type="text" name="Username" ngModel placeholder="Username" required>
+                <input type="password" name="Password" ngModel placeholder="Password" required>
+                <input type="submit" value="Login">
+              </form>
+              </div>
+              <div class="form">
+              <h2>Create an account</h2>
+              <h4>{{msg}}</h4>
+              <form (submit)="doRegister(reg)" #reg="ngForm">
+                <input type="text" name="Username" ngModel placeholder="Username" required=" ">
+                <input type="password" name="Password" ngModel placeholder="Password" required=" ">
+                <input type="email" name="Email" ngModel placeholder="Email Address" required=" ">
+                <input type="text" name="Phone" ngModel placeholder="Phone Number" required=" ">
+                <input type="submit" value="Register">
+              </form>
+              </div>
+              <div class="cta"><a href="#">Forgot your password?</a></div>
+            </div>
+          </div>
+          
+          <div class=" ">
+            <form (submit)="doLocalLogin(locallogin)" #locallogin="ngForm">
+              <input type="text" name="localName" ngModel placeholder="Username" required>  <br><br>
+              <input type="password" name="localPassword" ngModel placeholder="Password" required> <br><br>
+              <input type="submit" value="Get local user"> <br><br>
+              {{localmsg}}
+            </form>
+            
+          </div>
+
+
+        </div>
+    <!-- //login -->
+        </div>
+        <div class="clearfix"></div>

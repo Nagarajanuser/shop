@@ -1,0 +1,40 @@
+<div class="w3l_banner_nav_right">
+        
+    <div class="w3ls_w3l_banner_nav_right_grid">
+      <div class="w3ls_w3l_banner_nav_right_grid1">
+        <h6>food</h6>
+        
+        <div class="col-md-3 w3ls_w3l_banner_left" *ngFor="let product of products">
+          <div class="hover14 column">
+          <div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+            <div class="agile_top_brand_left_grid_pos">
+              <img src="assets/images/offer.png" alt=" " class="img-responsive" />
+            </div>
+            <div class="agile_top_brand_left_grid1">
+              <figure>
+                <div class="snipcart-item block">
+                  <div class="snipcart-thumb">
+                    <a routerLink="product/{{product._id}}"><img src="{{product.pdtImgPath}}" alt=" " class="img-responsive" /></a>
+                    <p>{{product.pdtName}}</p>
+                    <h4>{{product.pdtPrice | currency:"INR"}}</h4>
+                  </div>
+                  <div class="snipcart-details">
+                    
+                        <input type="button" name="submit" (click)="addToCart(product._id, product.pdtPrice)" value="Add to cart" class="button" />
+                       
+                  </div>
+                </div>
+              </figure>
+            </div>
+          </div>
+          </div>
+        </div>
+       
+  
+       
+        <div class="clearfix"> </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="clearfix"></div>
