@@ -24,7 +24,7 @@
     "core-js": "^2.5.4",
     "express": "^4.16.4",
     "jsonwebtoken": "^8.4.0",
-    "mongodb": "^2.2.33",
+    "mongodb": "^3.1.13",
     "multer": "^1.4.1",
     "rxjs": "~6.3.3",
     "zone.js": "~0.8.26"
